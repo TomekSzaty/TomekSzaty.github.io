@@ -1,5 +1,5 @@
 $(document).ready(function() {
-   const apiRoot = 'https://fast-island-81374.herokuapp.com/v1/task/';
+   const apiRoot = 'https://fast-island-81374.herokuapp.com/v1/tasks';
    const trelloApiRoot = 'https://fast-island-81374.herokuapp.com/v1/trello/';
    const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
    const $tasksContainer = $('[data-tasks-container]');
@@ -63,7 +63,7 @@ $(document).ready(function() {
    }
 
    function getAllTasks() {
-      const requestUrl = apiRoot + 'getTasks';
+      const requestUrl = apiRoot;
 
       $.ajax({
          url: requestUrl,
